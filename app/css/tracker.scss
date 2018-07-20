@@ -1,0 +1,2288 @@
+$tr_red: #e31b23;
+$tr_gray: #2b2c30;
+$tr_sand: #fff5c8;
+$tr_green: #8dc73f;
+
+@font-face {
+	font-family: 'Franklin Gothic Book Regular';
+	src: url('../fonts/FranklinGothic-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/FranklinGothic-Book.woff') format('woff'), url('../fonts/FranklinGothic-Book.ttf')  format('truetype'), url('../fonts/FranklinGothic-Book.svg#FranklinGothic-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Franklin Gothic Medium';
+	src: url('../fonts/FranklinGothic-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/FranklinGothic-Medium.woff') format('woff'), url('../fonts/FranklinGothic-Medium.ttf')  format('truetype'), url('../fonts/FranklinGothic-Medium.svg#FranklinGothic-Medium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Franklin Gothic Medium Cond';
+	src: url('../fonts/FranklinGothic-MediumCond.eot?#iefix') format('embedded-opentype'),  url('../fonts/FranklinGothic-MediumCond.woff') format('woff'), url('../fonts/FranklinGothic-MediumCond.ttf')  format('truetype'), url('../fonts/FranklinGothic-MediumCond.svg#FranklinGothic-MediumCond') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eurostile Bold';
+	src: url('../fonts/EurostileBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/EurostileBold.woff') format('woff'), url('../fonts/EurostileBold.ttf')  format('truetype'), url('../fonts/EurostileBold.svg#EurostileBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}  
+
+@font-face {
+	font-family: 'KozGoPro Heavy AlphaNum';
+	src: url('../fonts/KozGoPro-Heavy-AlphaNum.eot?#iefix') format('embedded-opentype'),  url('../fonts/KozGoPro-Heavy-AlphaNum.otf')  format('opentype'), url('../fonts/KozGoPro-Heavy-AlphaNum.woff') format('woff'), url('../fonts/KozGoPro-Heavy-AlphaNum.ttf')  format('truetype'), url('../fonts/KozGoPro-Heavy-AlphaNum.svg#KozGoPro-Heavy-AlphaNum') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Eurostile Regular';
+	src: url('../fonts/EurostileRegular.eot?#iefix') format('embedded-opentype'),  url('../fonts/EurostileRegular.woff') format('woff'), url('../fonts/EurostileRegular.ttf')  format('truetype'), url('../fonts/EurostileRegular.svg#EurostileRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Franklin Gothic Demi';
+	src: url('../fonts/FranklinGothic-Demi.eot?#iefix') format('embedded-opentype'),  url('../fonts/FranklinGothic-Demi.woff') format('woff'), url('../fonts/FranklinGothic-Demi.ttf')  format('truetype'), url('../fonts/FranklinGothic-Demi.svg#FranklinGothic-Demi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}  
+
+::-webkit-scrollbar{
+	width:1em
+}
+::-webkit-scrollbar-track{
+	background:rgba(255,255,255,0.1)
+}
+::-webkit-scrollbar-thumb{
+	background-color:#FFF;
+	outline:1px solid slategrey
+}
+
+*::-webkit-input-placeholder {
+	font-family: 'Franklin Gothic Book Regular'!important;
+}
+*:-moz-placeholder {
+	font-family: 'Franklin Gothic Book Regular'!important;
+}
+*::-moz-placeholder {
+	font-family: 'Franklin Gothic Book Regular'!important;
+}
+*:-ms-input-placeholder {
+	font-family: 'Franklin Gothic Book Regular'!important;
+}
+select {
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+select::-ms-expand {
+    display: none;
+}
+.wow {
+	visibility: hidden;
+}
+#loader:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	z-index: 9999;
+	background: url(../img/loading.png) no-repeat center / 100px;
+	-webkit-animation:spin 1s infinite linear;
+	animation:spin 1s infinite linear;
+}
+@-moz-keyframes spin {
+	from { -moz-transform: rotate(0deg); }
+	to { -moz-transform: rotate(359deg); }
+}
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(359deg); }
+}
+@keyframes spin {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(359deg);}
+}
+html, body, .main-wrapper, .main {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+html {
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		height: 100%;
+	}
+	&:before {
+		background: $tr_red;
+		z-index: -1;
+	}
+	&:after {
+		bottom: initial;
+		background: url(../img/square.svg) no-repeat right / 100% 100%;
+	}
+}
+body {
+	padding: 20px;
+	font-family: 'Franklin Gothic Book Regular';
+	color: #fff;
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		width: 25%;
+		height: 50%;
+		left: 50%;
+		bottom: initial;
+		z-index: -1;
+	}
+	&:before {
+		top: 0;
+		background: linear-gradient(to right top, white 50%, transparent 50%);
+	
+	}
+	&:after {
+		top: 50%;
+		background: linear-gradient(to right bottom, white 50%, transparent 50%);
+	}
+}
+.main-wrapper {
+	background: $tr_gray url(../img/bg-tracker.jpg) no-repeat center top / cover;
+	.main {
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+	}
+	header {
+		display: table;
+		width: 100%;
+		padding: 45px 4.1% 55px 0;
+		position: absolute;
+		z-index: 1;
+		.logo-wrapper {
+			display: table-cell;
+			width: 15%;
+			vertical-align: middle;
+			#logo {
+				display: inline-block;
+				width: 252px;
+				h1 {
+					width: 100%;
+					height: 50px;
+					text-indent: -9999999px;
+					background: url(../img/logo-tracker.png) no-repeat center / contain;
+				}
+			}
+		}
+		.menu {
+			display: table-cell;
+			width: 85%;
+			text-align: right;
+			.menu-item {
+				text-align: left;
+				display: inline-block;
+				vertical-align: bottom;
+				margin-left: 40px;
+				img {
+					display: block;
+				}
+				.mobile{
+					display: none;
+				}
+			}
+			.tel-header{
+				width: 360px;
+				.coteAgora{
+					width: 100%;
+					height: 70px;
+					text-indent: -99999px;
+					background: url(../img/cote-agora-tracker.png) no-repeat center / contain;
+				}
+			}
+		}
+	}
+	section{
+		.menu-mob{
+			display: none;
+			.tel-mob{
+				width: 360px;
+				display: inline-block;
+				.coteAgora{
+					height: 70px;
+					text-indent: -99999px;
+					background: url(../img/cote-agora-tracker.png) no-repeat center / contain;
+				}
+			}
+		}
+	}
+	#content{
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		padding-top: 170px;
+		&:before{
+			content: '';
+			width: 100%;
+			height: 580px;
+			background-color: rgba($color: #000000, $alpha: 0.25);
+			position: absolute;
+			top: 170px;
+			left: 0;
+			z-index: -1;
+		}
+		.grade-form{
+			width: 29.1%;
+			position: absolute;
+			top: 170px;
+			right: 17px;
+			height: 700px;
+			.front {
+				h2 {
+					margin-top: 0;
+				}
+			}
+			.back {
+				h2 {
+					color: #fff;
+					background: $tr_green;
+					height: 100%;
+				    padding: 30px 2.5%;
+					.title {
+						color: #fff;
+						font-family: 'KozGoPro Heavy AlphaNum';
+					}
+					.text {
+						text-transform: none;
+						font-family: 'Franklin Gothic Book Regular';
+						font-size: 19px;
+						line-height: 1.25;
+						max-width: 300px;
+						margin: 0 auto 30px;
+					}
+				}
+			}
+			h2{
+				width: 100%;
+				max-width: 360px;
+				font-family: 'Franklin Gothic Medium Cond';
+				font-size: 25px;
+				color: #2b2c30;
+				text-align: center;
+				text-transform: uppercase;
+				background-color: #fff;
+				padding: 19px 2.5%;
+				display: table;
+				margin: 38px auto 0;
+				line-height: 1.1;
+				span{
+					width: 100%;
+					display: table;
+					text-align: center;
+				}
+			}
+			input[type="text"], input[type="email"]{
+				border: none;
+				border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+				border-radius: 0;
+				background-color: transparent;
+				display: block;
+				width: 100%;
+				max-width: 360px;
+				margin: 21px auto 0;
+				padding: 1% 0;
+				font-family: 'Franklin Gothic Book Regular';
+				font-size: 17px;
+				color: #fff;
+				outline: none;
+				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					font-family: 'Franklin Gothic Book Regular';
+					font-size: 17px;
+					color: #fff;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+					font-family: 'Franklin Gothic Book Regular';
+					font-size: 17px;
+					color: #fff;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+					font-family: 'Franklin Gothic Book Regular';
+					font-size: 17px;
+					color: #fff;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+					font-family: 'Franklin Gothic Book Regular';
+					font-size: 17px;
+					color: #fff;
+				}
+			}
+			input[type="text"].empty, input[type="email"].empty{
+				border-bottom: 1px solid $tr_red;
+				border-radius: 0;
+			}
+			#veiculo{
+				outline: none;
+				display: block;
+				background: url('../img/seta-form.png') no-repeat right transparent;
+				width: 100%;
+				max-width: 360px;
+				height: 30px;
+				padding: 1% 0;
+				font-family: 'Franklin Gothic Book Regular';
+				font-size: 17px;
+				color: $tr_sand;
+				text-transform: uppercase;
+				border: none;
+				border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+				border-radius: 0;
+				margin: 21px auto 0;
+				-webkit-appearance: none;
+				option{
+					background-color: #333;
+					color: #fff;
+				}
+			}
+			input[type="submit"]{
+				width: 100%;
+				max-width: 360px;
+				display: block;
+				height: 70px;
+				font-family: 'KozGoPro Heavy AlphaNum';
+				font-size: 23px;
+				text-transform: uppercase;
+				color: #fff;
+				background-color: $tr_red;
+				border: none;
+				border-radius: 0;
+				margin: 12px auto 0;
+				&:hover, &:focus, &:active, &:visited{
+					background-color: rgba($color: $tr_red, $alpha: 0.7); 
+					outline: none;
+				}
+			}
+			p{
+				font-family: 'Franklin Gothic Book Regular';
+				font-size: 14px;
+				color: #313336;
+				background-color: #fff;
+				border-radius: 50%;
+				padding: 3px 4px;
+				margin: 29px auto 0;
+				display: table;
+			}
+			.compre-online{
+				font-family: 'Franklin Gothic Demi';
+				font-size: 20px;
+				color: #fff;
+				text-transform: uppercase;
+				margin: 11px auto 0;
+				display: table;
+			}
+		}
+		.grade-scroll{
+			width: 100%;
+			height: 100%;
+			overflow: scroll;
+			overflow-x: hidden;
+			padding-right: 30%;
+			.grade-content{
+				width: 100%;
+				.linha-titulo{
+					.titulo-solucoes{
+						margin: 4.7% 0 0 17%;
+						width: 40%;
+						display: inline-block;
+						h2{
+							display: table;
+							font-family: 'Franklin Gothic Medium Cond';
+							font-size: 39px;
+							text-transform: uppercase;
+							span{
+								display: table;
+								background-color: rgba($color: #000000, $alpha: 0.5);
+								padding: 0 25px;
+							}
+							span:nth-of-type(1){
+								padding-top: 20px;
+								line-height: 0.8;
+							}
+							span:nth-of-type(2){
+								height: 72px;
+								line-height: 72px;
+							}
+							span:nth-of-type(3){
+								padding-bottom: 20px;
+								line-height: 0.8;
+							}
+						}
+						&:nth-of-type(2){
+							margin: 6.1% 0 0 5.6%;
+							vertical-align: top;
+							width: 25%;
+							p{
+								span{
+									color: #e1d8b1;
+								}
+							}
+						}
+					}
+				}
+				.carousel{
+					img{
+						width: 100%;
+					}
+				}
+				.linha-funcionamento{
+					width: 100%;
+					display: inline-block;
+					margin-left: 17%;
+					div{
+						display: inline-block;
+						vertical-align: middle;
+						h2{
+							display: table;
+							font-family: 'Franklin Gothic Medium Cond';
+							font-size: 39px;
+							text-transform: uppercase;
+							span{
+								display: table;
+								background-color: rgba($color: #000000, $alpha: 0.5);
+								padding: 0 24px;
+								height: 72px;
+								line-height: 72px;
+							}
+						}
+						&:nth-of-type(2){
+							vertical-align: middle;
+							margin-left: 15px;
+							p{
+								display: table;
+							}
+						}
+					}
+				}
+				.funciona-solucoes{
+					width: 93%;
+					margin-left: 11.3%;
+					margin-top: 3%;
+					margin-bottom: 50px;
+					max-width: 1115px;
+					.grade-solucoes{
+						display: table;
+						margin-top: 10px;
+						cursor: pointer;
+						.solucoes-preco{
+							width: 35%;
+							display: table-cell;
+							h3{
+								font-family: 'Eurostile Bold';
+								font-size: 26px;
+								color: $tr_red;
+								text-transform: uppercase;
+								display: table;
+								margin-bottom: 12px;
+								span{
+									display: table;
+									line-height: 1.2;
+								}
+							}
+							.caixa-preco{
+								width: 100%;
+								height: 163px;
+								border: 1px solid #fff;
+								background-color: rgba($color: #000000, $alpha: 0.3);
+								//padding: 3% 5.4%;
+								display: table;
+								position: relative;
+								.caixa-content{
+									position: absolute;
+									top: 50%;
+									left: 50%;
+									transform: translate(-50%, -50%);
+									width: 100%;
+									text-align: center;
+									.partir-cifrao, .cinq-dois, .zeros, .mensais{
+										display: inline-block;
+										vertical-align: top;
+										line-height: 1;
+									}
+									.cinq-dois, .zeros{
+										font-family: 'Eurostile Bold';
+										color: $tr_sand;
+										line-height: 0.7
+
+									}
+									.partir-cifrao{
+										text-align: right;
+										line-height: 1.2;
+										vertical-align: bottom;
+										margin-bottom: -3px;
+										.cifrao{
+											font-family: 'Eurostile Regular';
+											font-size: 30px;
+											color: $tr_sand;
+										}
+									}
+									.cinq-dois{
+										font-size: 90px;
+										//margin-top: 39px;	
+									}
+									.zeros{
+										font-size: 45px;
+										margin-top: -5px;
+										margin-left: -9px;
+									}
+									.mensais{
+										margin-top: -5px;
+										margin-left: 1.7%;
+									}
+								}
+							}
+						}
+						.solucoes-texto{
+							width: 65%;
+							display: table-cell;
+							.espaco-texto{
+								margin-bottom: 13px;
+							}
+							h4{
+								display: table;
+								font-family: 'KozGoPro Heavy AlphaNum';
+								font-size: 16px;
+								color: #000;
+								text-transform: uppercase;
+								background-color: #fff5c8;
+								padding: 3px 10px;
+								margin-left: 5.2%;
+							}
+							.texto-e-bg{
+								color: #fff5c8;
+								background-color: rgba($color: #000000, $alpha: 0.3);
+								padding: 20px 5.2%;
+								height: 165px;
+							}
+							p{
+								padding: 5px 5.2%;
+							}
+						}
+						// &:hover{
+						// 	cursor: pointer;
+						// }
+					}
+				}
+			}
+			#footer{
+				width: 50%;
+				text-align: right;
+				margin: 80px 0 30px 39%;
+			}
+		}
+	}
+	.main.esconde{
+		overflow: hidden;
+	}
+	.main{
+		.modal.rolagem{
+			overflow: auto;
+		}
+		.modal{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+			background: $tr_gray url(../img/square.svg) no-repeat right / 49% 100%;
+			z-index: 1;
+			.grade-modal{
+				padding: 30px 0 0 40px;
+				.header{
+					h2{
+						font-family: 'Eurostile Bold';
+						font-size: 38px;
+						color: $tr_red;
+						text-transform: uppercase;
+					}
+					h3{
+						font-family: 'Franklin Gothic Medium Cond';
+						font-size: 25px;
+						text-transform: uppercase;
+					}
+					.botao-fechar{
+						position: absolute;
+						top: 24px;
+						right: 21px;
+						&:hover{
+							cursor: pointer;
+						}
+					}
+				}
+				hr {
+					width: 95%;
+					background-color: rgba(255,255,255,0.3);
+					border: none;
+					display: block;
+					height: 1px;
+					margin: 0.7rem 0 1rem;
+				}
+				h4{
+					font-family: 'Franklin Gothic Medium Cond';
+					font-size: 24px;
+					text-transform: uppercase;
+					background-color: rgba($color: #000000, $alpha: 0.5);
+					display: inline-block;
+					padding: 3px 8px;
+					margin-bottom: 15px;
+				}
+				.conteudo{
+					img{
+						width: 100%;
+						max-width: 1801px;
+					}
+					h5{
+						font-family: 'Franklin Gothic Demi';
+						font-size: 22px;
+						color: $tr_red;
+						margin-top: 30px;
+					}
+					h4{
+						font-family: 'Franklin Gothic Medium Cond';
+						font-size: 24px;
+						text-transform: uppercase;
+						background-color: rgba($color: #000000, $alpha: 0.5);
+						display: inline-block;
+						padding: 3px 8px;
+						margin-top: 40px;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+		.faq-modal{
+			overflow: auto;
+			.grade-modal{
+				padding: 30px 30px 20px 40px;
+				overflow: hidden;
+				.conteudo{
+					overflow: hidden;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1650px) {
+	.main-wrapper{
+		header{
+			.logo-wrapper{
+				#logo{
+					width: 237px;
+					h1{
+						height: 47px;
+					}
+				}
+			}
+			.menu{
+				.tel-header{
+					width: 340px;
+					.coteAgora{
+						height: 66px;
+					}
+				}
+			}
+		}
+		#content{
+			.grade-scroll{
+				.grade-content{
+					.linha-titulo{
+						.titulo-solucoes{
+							h2{
+								font-size: 34px;
+							}
+						}
+					}
+					.linha-funcionamento{
+						div{
+							h2{
+								font-size: 34px;
+							}
+						}
+					}
+					.funciona-solucoes{
+						.grade-solucoes{
+							.solucoes-preco{
+								h3{
+									font-size: 22px;
+								}
+								.caixa-preco{
+									.caixa-content{
+										.partir-cifrao .partir, .mensais{
+											font-size: 15px;
+										}
+										.partir-cifrao .cifrao{
+											font-size: 24px;
+										}
+										.cinq-dois{
+											font-size: 76px;
+										}
+										.zeros{
+											font-size: 38px;
+										}
+									}
+								}
+							}
+							.solucoes-texto{
+								.espaco-texto{
+									margin-bottom: 6px;
+								}
+							}
+						}
+					}
+				}
+				#footer{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1480px){
+	.main-wrapper{
+		header{
+			.menu{
+				.menu-item{
+					img{
+						max-height: 50px;
+					}
+				}
+			}
+		}
+		#content{
+			padding-top: 150px;
+			&:before{
+				top: 150px;
+			}
+			.grade-form{
+				top: 170px;
+				h2{
+					font-size: 22px;
+					margin: 31px auto 0;
+				}
+				input[type="text"], input[type="email"]{
+					font-size: 16px;
+					margin: 20px auto 0;
+					&::-webkit-input-placeholder{
+						font-size: 16px;
+					}
+					&::-moz-placeholder{
+						font-size: 16px;
+					}
+					&:-ms-input-placeholder{
+						font-size: 16px;
+					}
+					&:-moz-placeholder{
+						font-size: 16px;
+					}
+				}
+				#veiculo{
+					font-size: 16px;
+					margin-top: 24px;
+				}
+				input[type="submit"]{
+					height: 65px;
+					font-size: 21px;
+					// margin: 10px 0 0 15%;
+				}
+			}
+			.grade-scroll{
+				.grade-content{
+					.linha-titulo{
+						.titulo-solucoes{
+							h2{
+								font-size: 32px;
+							}
+						}
+						&:nth-of-type(2) {
+						    margin: 6.1% 0 0 7.9%;
+						}
+					}
+					.linha-funcionamento{
+						div{
+							h2{
+								font-size: 32px;
+							}
+						}
+					}
+					.funciona-solucoes{
+						.grade-solucoes{
+							.solucoes-preco{
+								h3{
+									font-size: 19px;
+								}
+								.caixa-preco{
+									max-height: 148px;
+								}
+							}
+							.solucoes-texto{
+								.espaco-texto{
+									margin-bottom: 5px;
+								}
+								h4{
+									font-size: 14px;
+									margin-left: 4.2%;
+								}
+								.texto-e-bg{
+									height: 150px;
+									font-size: 15px;
+									padding: 17px 4.2%;
+								}
+								p{
+									padding: 4px 4.2%;
+								}
+							}
+						}
+					}
+				}
+				#footer{
+					font-size: 14px;
+				}
+			}
+		}
+		.main{
+			.modal{
+				.grade-modal{
+					.header{
+						h2{
+							font-size: 32px;
+						}
+						h3{
+							font-size: 20px;
+							margin-top: -8px;
+						}
+						.botao-fechar{
+							max-height: 30px;
+						}
+					}
+					.conteudo{
+						img{
+							max-width: 1300px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1370px) {
+	body {
+		padding: 15px;
+	}
+	.main-wrapper{
+		.main{
+			header{
+				padding: 29px 2.3% 34px 0;
+				.logo-wrapper{
+					display: inline-block;
+					vertical-align: top;
+					margin-top: -17px;
+					margin-right: 1%;
+					#logo{
+						width: 212px;
+						h1{
+							height: 42px;
+						}
+					}
+				}
+				.menu{
+					.menu-item{
+						margin-top: 4px;
+						margin-left: 30px;
+						img{
+							max-height: 45px;
+						}
+					}
+					.tel-header{
+						width: 265px;
+						margin-left: 20px;
+						.coteAgora{
+							height: 52px;
+						}
+					}
+				}
+			}
+		}
+		#content{
+			padding-top: 120px;
+			&:before{
+				height:390px;
+				top: 120px;
+			}
+			.grade-form{
+				top:120px;
+				height: 600px;
+				h2, input[type="text"], input[type="email"], #veiculo, input[type="submit"]{
+					max-width: 240px;
+				}
+				h2{
+					font-size: 17px;
+					padding: 10px 2.5%;
+				}
+				input[type="text"], input[type="email"]{
+					margin: 12px auto 0;
+					font-size: 12px;
+					&::-webkit-input-placeholder{
+						font-size: 12px;
+					}
+					&::-moz-placeholder{
+						font-size: 12px;
+					}
+					&:-ms-input-placeholder{
+						font-size: 12px;
+					}
+					&:-moz-placeholder{
+						font-size: 12px;
+					}
+				}
+				#veiculo{
+					font-size: 12px;
+					margin-top: 12px;
+				}
+				input[type="submit"]{
+					height: 45px;
+					font-size: 14px;
+				}
+				p{
+					font-size: 10px;
+					margin: 18px auto 0;
+				}
+				.compre-online{
+					font-size: 14px;
+				}
+			}
+			.grade-scroll{
+				.grade-content{
+					.linha-titulo{
+						.titulo-solucoes{
+							margin: 4% 0 0 12%;
+							h2{
+								font-size: 28px;
+								span{
+									padding: 0 18px;
+								}
+								span:nth-of-type(1){
+									padding-top: 15px;
+								}
+								span:nth-of-type(2){
+									height: 60px;
+									line-height: 60px;
+								}
+								span:nth-of-type(3){
+									padding-bottom: 15px;
+								}
+							}
+							&:nth-of-type(2){
+								margin: 5% 0 0 12.8%;
+								width: 30%;
+								p{
+									font-size:14px;
+								}
+							}
+						}
+					}
+					//carousel{}
+					.linha-funcionamento{
+						margin-left: 12%;
+						div{
+							h2{
+								font-size: 28px;
+								span{
+									height: 55px;
+									line-height: 55px;
+									padding: 0 18px;
+								}
+							}
+							&:nth-of-type(2){
+								font-size: 14px;
+							}
+						}
+					}
+					.funciona-solucoes{
+						margin-left: 8%;
+						.grade-solucoes{
+							.solucoes-preco{
+								h3{
+									font-size: 18px;
+								}
+								.caixa-preco{
+									max-height: 130px;
+									padding: 2% 2%;
+									.caixa-content{
+										.partir-cifrao{
+											.partir{
+												font-size: 13px;
+											}
+											.cifrao{
+												font-size: 21px;
+											}
+										}
+										.cinq-dois{
+											font-size: 68px;
+										}
+										.zeros{
+											font-size: 26px;
+										}
+										.mensais{
+											font-size: 13px;
+										}
+									}
+								}
+							}
+							.solucoes-texto{
+								.espaco-texto{
+									margin-bottom: 7px;
+								}
+								h4{
+									font-size: 12px;
+									margin-left: 4%
+								}
+								.texto-e-bg{
+									font-size: 13px;
+									height: 132px;
+									padding: 15px 4%;
+								}
+								p{
+									font-size: 13px;
+									padding: 4px 4%;
+								}
+							}
+						}
+					}
+				}
+				#footer{
+					font-size: 14px;
+				}
+			}
+		}
+		.main{
+			.modal{
+				.grade-modal{
+					h4{
+						font-size: 17px;
+					}
+					.conteudo{
+						img{
+							max-width: 1126px;
+						}
+						h4{
+							font-size: 17px;
+						}
+						h5{
+							font-size: 17px;
+						}
+						p{
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1221px) {
+	.main-wrapper{
+		#content{
+			.grade-scroll{
+				.grade-content{
+					.funciona-solucoes{
+						.grade-solucoes{
+							.solucoes-preco{
+								h3{
+									font-size: 16px;
+								}
+								.caixa-preco{
+									.caixa-content{
+										.partir-cifrao{
+											.partir{
+												font-size: 12px;
+											}
+											.cifrao{
+												font-size: 20px;
+											}
+										}
+										.cinq-dois{
+											font-size: 65px;
+										}
+										.zeros{
+											font-size: 24px;
+										}
+										.mensais{
+											font-size: 12px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				#footer{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1100px) {
+	.main-wrapper{
+		.main{
+			header{
+				.logo-wrapper{
+					#logo{
+						width: 192px;
+						h1{
+							height: 38px;
+						}
+					}
+				}
+				.menu{
+					.menu-item{
+						img{
+							max-height: 40px;
+						}
+					}
+					.tel-header{
+						width: 247px;
+						.coteAgora{
+							height: 48px;
+						}
+					}
+				}
+			}
+			#content{
+				.grade-scroll{
+					.grade-content{
+						.linha-titulo{
+							.titulo-solucoes{
+								h2{
+									font-size: 25px;
+								}
+								p{
+									font-size: 13px;
+								}
+							}
+						}
+						.linha-funcionamento{
+							div{
+								h2{
+									font-size: 25px;
+								}
+								&:nth-of-type(2){
+									p{
+										font-size: 13px;
+									}
+								}
+							}
+						}
+						.funciona-solucoes{
+							.grade-solucoes{
+								.solucoes-preco{
+									h3{
+										font-size: 15px;
+									}
+								}
+								.solucoes-texto{
+									.espaco-texto{
+										margin-bottom: 3px;
+									}
+									.texto-e-bg{
+										font-size: 12px;
+										padding: 12px 4%;
+									}
+									p{
+										font-size: 12px;
+										padding: 2px 4%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+	::-webkit-scrollbar{
+		width: 0.7em
+	}
+	.main-wrapper #content .grade-form h2, .main-wrapper #content .grade-form input[type="text"], .main-wrapper #content .grade-form input[type="email"], .main-wrapper #content .grade-form #veiculo, .main-wrapper #content .grade-form input[type="submit"] {
+		max-width: 500px;
+	}
+	html {
+		&:before, &:after {
+			top: auto;
+			right: auto;
+			bottom: 0;
+			width: 100%;
+			height: 50%;
+		}
+		&:after {
+		    background: url(../img/square-mob.svg) no-repeat right/100% 100%;
+		}
+	}
+	body {
+		&:before, &:after {
+			left: 0;
+			width: 50%;
+			height: 25%;
+			top: 50%;
+		}
+		&:before {
+		    background: linear-gradient(to left bottom, white 50%, transparent 50%);
+		}
+		&:after {
+			background: linear-gradient(to right bottom, white 50%, transparent 50%);
+			left: 50%;
+		}
+	}
+	.main-wrapper{
+		.main{
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+			header{
+				padding: 29px 10% 34px 0;
+				.logo-wrapper{
+					margin-top: -39px;
+					#logo{
+						width: 303px;
+						h1{
+							height: 60px;
+						}
+					}
+				}
+				.menu{
+					.menu-item{
+						img{
+							display: none;
+						}
+						.mobile{
+							display: inline-block;
+							max-height: 60px;
+						}
+					}
+					.tel-header{
+						display: none;
+					}
+				}
+			}
+			section{
+				position: relative;
+				top: 118px;
+				.menu-mob{
+					display: inline-block;
+					padding: 10px 0 0 27%;
+					.tel-mob{
+						width: 446px;
+						.coteAgora{
+							height: 85px;
+						}
+					}
+				}
+			}
+			#content{
+				height: auto;
+				padding-top: 15px;
+				&:before{
+					display: none;
+				}
+				.grade-form{
+					width: 100%;
+					height: auto;
+					display: inline-block;
+					position: relative;
+					top: 0;
+					left: 0;
+					padding: 0 10%;
+					.back {
+						h2 {
+							img {
+								max-width: 130px;
+								width: 100%;
+							}
+						}
+					}
+					h2{
+						font-size: 30px;
+						padding: 17px 2.5%;
+					}
+					input[type="text"], input[type="email"]{
+						font-size: 20px;
+						&::-webkit-input-placeholder{
+							font-size: 20px;
+						}
+						&::-moz-placeholder{
+							font-size: 20px;
+						}
+						&:-ms-input-placeholder{
+							font-size: 20px;
+						}
+						&:-moz-placeholder{
+							font-size: 20px;
+						}
+					}
+					#veiculo{
+						height: 38px;
+						font-size: 20px;
+					}
+					input[type="submit"]{
+						height: 73px;
+						font-size: 25px;
+					}
+					p{
+						font-size: 16px;
+					}
+					.compre-online{
+						font-size: 20px;
+					}
+				}
+				.grade-scroll{
+					overflow: auto;
+					padding-right: 0;
+					position: relative;
+					top: 80px;
+					.grade-content{
+						padding: 0 10%;
+						.linha-titulo{
+							width: 100%;
+							margin: 20px auto 0;
+							.titulo-solucoes{
+								width: 49%;
+								margin: 0;
+								vertical-align: middle;
+								h2{
+									font-size: 26px;
+								}
+								&:nth-of-type(2){
+									p{
+										font-size: 15px;
+									}
+								}
+							}
+						}
+						.carousel{
+							img{
+								margin: 30px 0 15px;
+							}
+						}
+						.linha-funcionamento{
+							margin-left: 0;
+							div{
+								h2{
+									display: inline-block;
+									font-size: 26px;
+									span{
+										display: inline-block;
+									}
+								}
+								&:nth-of-type(2){
+									margin-left: 0;
+									p{
+										display: inline-block;
+										font-size: 15px;
+									}
+								}
+							}
+						}
+						.funciona-solucoes{
+							width: 100%;
+							margin-left: 0;
+							margin-bottom: 30px;
+							.grade-solucoes{
+								display: inline-block;
+								.solucoes-preco{
+									width: 100%;
+									display: inline-block;
+									h3{
+										font-size: 24px;
+										margin-top: 20px;
+									}
+									.caixa-preco{
+										max-height: 158px;
+										.caixa-content{
+											.partir-cifrao{
+												.partir{
+													font-size: 18px;
+												}
+												.cifrao{
+													font-size: 24px;
+												}
+											}
+											.cinq-dois{
+												font-size: 90px;
+											}
+											.zeros{
+												font-size: 40px;
+											}
+											.mensais{
+												font-size: 18px;
+											}
+										}
+									}
+								}
+								.solucoes-texto{
+									width: 100%;
+									display: inline-block;
+									.espaco-texto{
+										margin-bottom: -10px;
+									}
+									h4{
+										font-size: 15px;
+										margin-left: 0;
+									}
+									.texto-e-bg{
+										font-size: 15px;
+										padding: 12px 0;
+										background: none;
+										height: auto;
+									}
+									p{
+										font-size: 15px;
+										padding: 3px 0;
+									}
+								}
+							}
+						}
+					}
+					#footer{
+						width: 100%;
+						text-align: center;
+						margin: 55px 0 20px 0;
+						font-size: 14px;
+						margin: 0 0 110px 0;
+					}
+				}
+			}
+			.modal{
+				height: 100%;
+				background: $tr_gray url(../img/square-mob.svg) no-repeat bottom / 100% 49%;
+				position: fixed;
+				padding-bottom: 30px;
+				.grade-modal{
+					padding: 30px 30px 60px;
+					.header{
+						h2{
+							font-size: 46px;
+							line-height: 1;
+							margin-bottom: 10px;
+							padding-right: 36px;
+						}
+						h3{
+							font-size: 30px;
+						}
+						.botao-fechar{
+							max-height: 36px;
+						}
+					}
+					h4{
+						font-size: 30px;
+					}
+					.conteudo{
+						text-align: center;
+						img{
+							height: 100%;
+							max-width: 572px;
+						}
+						h4, h5, p{
+							text-align: left;
+						}
+						h5{
+							font-size: 28px;
+							line-height: 1.1;
+						}
+						p{
+							font-size: 19px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:768px) {
+	.main-wrapper #content .grade-form h2, .main-wrapper #content .grade-form input[type="text"], .main-wrapper #content .grade-form input[type="email"], .main-wrapper #content .grade-form #veiculo, .main-wrapper #content .grade-form input[type="submit"] {
+		max-width: 577px;
+	}
+	body {
+		padding: 10px;
+	}
+	.main-wrapper{
+		.main{
+			header{
+				.logo-wrapper{
+					margin-top: -34px;
+					#logo{
+						width: 222px;
+						h1{
+							height: 44px;
+						}
+					}
+				}
+			}
+			section{
+				.menu-mob{
+					padding: 10px 0 0 24.8%;
+					.tel-mob{
+						width: 372px;
+						.coteAgora{
+							height: 72px;
+						}
+					}
+				}
+			}
+			#content{
+				.grade-form{
+					margin-bottom: 20px;
+					input[type="submit"]{
+						height: 75px;
+						font-size: 23px;
+					}
+					.compre-online{
+						font-size: 23px;
+					}
+				}
+				.grade-scroll{
+					.grade-content{
+						.linha-titulo{
+							.titulo-solucoes{
+								width: 100%;
+								h2{
+									font-size: 35px;
+								}
+								&:nth-of-type(2){
+									display: none;
+								}
+							}
+						}
+						.linha-funcionamento{
+							div{
+								h2{
+									font-size: 35px;
+									margin-top: 10px;
+								}
+								&:nth-of-type(2){
+									p{
+										font-size: 17px;
+									}
+								}
+							}
+						}
+						.funciona-solucoes{
+							.grade-solucoes{
+								.solucoes-preco{
+									h3{
+										font-size: 28px;
+									}
+									.caixa-preco{
+										.caixa-content{
+											.partir-cifrao{
+												.partir{
+													font-size: 16px;
+												}
+												.cifrao{
+													font-size: 22px;
+												}
+											}
+											.cinq-dois{
+												font-size: 80px;
+											}
+											.zeros{
+												font-size: 36px;
+											}
+											.mensais{
+												font-size: 16px;
+											}
+										}
+									}
+								}
+								.solucoes-texto{
+									h4{
+										font-size: 18px;
+									}
+									.texto-e-bg{
+										font-size: 17px;
+									}
+									p{
+										font-size: 17px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:565px) {
+	.main-wrapper{
+		.main{
+			header{
+				.menu{
+					.menu-item{
+						margin-left: 13px;
+						.mobile{
+							max-height: 55px;
+						}
+					}
+				}
+				.logo-wrapper{
+					margin-top: -28px;
+					#logo{
+						width: 202px;
+						h1{
+							height: 40px;
+						}
+					}
+				}
+			}
+			section{
+				top: 110px;
+				.menu-mob{
+					padding: 0 0 0 15.5%;
+					.tel-mob{
+						.coteAgora{
+							height: 75px;
+						}
+					}
+				}
+			}
+			#content{
+				.grade-form{
+					input[type="text"], input[type="email"]{
+						font-size: 18px;
+						&::-webkit-input-placeholder{
+							font-size: 18px;
+						}
+						&::-moz-placeholder{
+							font-size: 18px;
+						}
+						&:-ms-input-placeholder{
+							font-size: 18px;
+						}
+						&:-moz-placeholder{
+							font-size: 18px;
+						}
+					}
+					#veiculo{
+						height: 32px;
+						font-size: 20px;
+					}
+					input[type="submit"]{
+						height: 75px;
+						font-size: 21px;
+					}
+					p{
+						font-size: 14px;
+					}
+					.compre-online{
+						font-size: 21px;
+					}
+				}
+				.grade-scroll{
+					.grade-content{
+						.linha-titulo{
+							.titulo-solucoes{
+								h2{
+									font-size: 33px;
+								}
+							}
+						}
+						.linha-funcionamento{
+							div{
+								h2{
+									font-size: 33px;
+								}
+							}
+						}
+						.funciona-solucoes{
+							.grade-solucoes{
+								.solucoes-preco{
+									h3{
+										font-size: 24px;
+									}
+								}
+							}
+						}
+					}
+					#footer{
+						padding: 0 10%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:495px) {
+	.main-wrapper{
+		.main{
+			header{
+				padding: 20px 10% 10px 0;
+				.menu{
+					.menu-item{
+						margin-left: 7px;
+					}
+				}
+			}
+			section{
+				top: 102px;
+				.menu-mob{
+					width: 100%;
+					padding: 0 10% 0 15.7%;
+					.tel-mob{
+						width: 315px;
+						.coteAgora{
+							height: 60px;
+						}
+					}
+				}
+			}
+			#content{
+				.grade-form{
+					h2{
+						font-size: 24px;
+					}
+					input[type="text"], input[type="email"]{
+						font-size: 18px;
+						&::-webkit-input-placeholder{
+							font-size: 18px;
+						}
+						&::-moz-placeholder{
+							font-size: 18px;
+						}
+						&:-ms-input-placeholder{
+							font-size: 18px;
+						}
+						&:-moz-placeholder{
+							font-size: 18px;
+						}
+					}
+					#veiculo{
+						height: 27px;
+						font-size: 18px;
+					}
+					input[type="submit"]{
+						height: 60px;
+						font-size: 22px;
+					}
+					p{
+						font-size: 13px;
+					}
+					.compre-online{
+						font-size: 18px;
+					}
+				}
+				.grade-scroll{
+					.grade-content{
+						.linha-titulo{
+							.titulo-solucoes{
+								h2{
+									font-size: 25px;
+									span{
+										padding: 0 14px;
+									}
+									span:nth-of-type(1){
+										padding-top: 15px;
+									}
+									span:nth-of-type(2){
+										height: 55px;
+										line-height: 55px;
+									}
+									span:nth-of-type(3){
+										padding-bottom: 15px;
+									}
+								}
+							}
+						}
+						.linha-funcionamento{
+							div{
+								h2{
+									font-size: 25px;
+								}
+								&:nth-of-type(2){
+									p{
+										font-size: 15px;
+										margin-top: 5px;
+									}
+								}
+							}
+						}
+						.funciona-solucoes{
+							.grade-solucoes{
+								.solucoes-preco{
+									h3{
+										font-size: 21px;
+									}
+								}
+								.solucoes-texto{
+									h4{
+										font-size: 15px;
+									}
+									.texto-e-bg{
+										font-size: 15px;
+									}
+									p{
+										font-size: 15px;
+									}
+								}
+							}
+						}
+					}
+				}
+				#footer{
+					font-size: 12px;
+				}
+			}
+			.modal{
+				.grade-modal{
+					.header{
+						h2{
+							font-size: 21px;
+						}
+						h3{
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:440px) {
+	.main-wrapper{
+		.main{
+			header{
+				padding: 13px 10% 5px 0;
+				.menu{
+					.menu-item{
+						.mobile{
+							max-height: 50px;
+						}
+					}
+				}
+				.logo-wrapper{
+					margin-top: -21px;
+					#logo{
+						width: 167px;
+						h1{
+							height: 33px;
+						}
+					}
+				}
+			}
+			section{
+				top: 82px;
+				.menu-mob{
+					padding: 0 10% 0 17.6%;
+					.tel-mob{
+						width: 250px;
+						.coteAgora{
+							height: 48px;
+						}
+					}
+				}
+			}
+			#content{
+				padding-top: 5px;
+				.grade-form{
+					h2{
+						font-size: 24px;
+						margin: 10px auto 0;
+					}
+					input[type="text"], input[type="email"]{
+						font-size: 14px;
+						&::-webkit-input-placeholder{
+							font-size: 14px;
+						}
+						&::-moz-placeholder{
+							font-size: 14px;
+						}
+						&:-ms-input-placeholder{
+							font-size: 14px;
+						}
+						&:-moz-placeholder{
+							font-size: 14px;
+						}
+					}
+					#veiculo{
+						height: 23px;
+						font-size: 14px;
+					}
+					input[type="submit"]{
+						height: 58px;
+						font-size: 18px;
+					}
+					p{
+						font-size: 11px;
+					}
+					.compre-online{
+						font-size: 16px;
+					}
+				}
+				.grade-scroll{
+					.grade-content{
+						.linha-titulo{
+							.titulo-solucoes{
+								h2{
+									font-size: 23px;
+								}
+							}
+						}
+						.linha-funcionamento{
+							div{
+								h2{
+									font-size: 23px;
+								}
+								&:nth-of-type(2){
+									p{
+										font-size: 13px;
+										margin-top: 5px;
+									}
+								}
+							}
+						}
+						.funciona-solucoes{
+							.grade-solucoes{
+								.solucoes-preco{
+									h3{
+										font-size: 18px;
+									}
+									.caixa-preco{
+										max-height: 145px;
+										.caixa-content{
+											.partir-cifrao{
+												.partir{
+													font-size: 13px;
+												}
+												.cifrao{
+													font-size: 19px;
+												}
+											}
+											.cinq-dois{
+												font-size: 68px;
+											}
+											.zeros{
+												font-size: 32px;
+											}
+											.mensais{
+												font-size: 13px;
+											}
+										}
+									}
+								}
+								.solucoes-texto{
+									h4{
+										font-size: 14px;
+									}
+									.texto-e-bg{
+										font-size: 13px;
+									}
+									p{
+										font-size: 13px;
+									}
+								}
+							}
+						}
+					}
+					#footer{
+						font-size: 10px;
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+@media screen and (max-width:380px) {
+	.main-wrapper{
+		.main{
+			header{
+				padding: 13px 5% 5px 0;
+				.menu{
+					.menu-item{
+						margin-left: 3px;
+						.mobile{
+							max-height: 45px;
+						}
+					}
+				}
+				.logo-wrapper{
+					margin-top: -17px;
+					#logo{
+						width: 142px;
+						h1{
+							height: 28px;
+						}
+					}
+				}
+			}
+			section{
+				top: 77px;
+				.menu-mob{
+					padding: 0 10% 0 18.7%;
+					.tel-mob{
+						width: 225px;
+						.coteAgora{
+							height: 43px;
+						}
+					}
+				}
+			}
+			#content{
+				.grade-form{
+					padding: 0 5%;
+					h2{
+						font-size: 19px;
+						margin: 10px auto 0;
+						padding: 15px 2.5%;
+					}
+					input[type="text"], input[type="email"]{
+						font-size: 12px;
+						&::-webkit-input-placeholder{
+							font-size: 12px;
+						}
+						&::-moz-placeholder{
+							font-size: 12px;
+						}
+						&:-ms-input-placeholder{
+							font-size: 12px;
+						}
+						&:-moz-placeholder{
+							font-size: 12px;
+						}
+					}
+					#veiculo{
+						height: 23px;
+						font-size: 12px;
+					}
+					input[type="submit"]{
+						height: 46px;
+						font-size: 15px;
+					}
+					p{
+						font-size: 10px;
+					}
+					.compre-online{
+						font-size: 15px;
+					}
+				}
+				.grade-scroll{
+					.grade-content{
+						padding: 0 5%;
+						.funciona-solucoes{
+							.grade-solucoes{
+								.solucoes-preco{
+									.caixa-preco{
+										max-height: 140px;
+									}
+								}
+							}
+						}
+					}
+					#footer{
+						padding: 0 5%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:343px) {
+	.main-wrapper{
+		.main{
+			header{
+				padding: 7px 6.1% 2px 0;
+				.menu{
+					.menu-item{
+						.mobile{
+							max-height: 40px;
+						}
+					}
+				}
+				.logo-wrapper{
+					margin-top: -13px;
+					#logo{
+						width: 128px;
+						h1{
+							height: 25px;
+						}
+					}
+				}
+			}
+			section{
+				top: 63px;
+				.menu-mob{
+					padding: 0 10% 0 18%;
+					.tel-mob{
+						width: 200px;
+						.coteAgora{
+							height: 38px;
+						}
+					}
+				}
+			}
+			#content{
+				.grade-form{
+					padding: 0 3%;
+					h2{
+						font-size: 17px;
+						margin: 13px auto 0;
+						padding: 14px 2.5%;
+					}
+					input[type="text"], input[type="email"]{
+						font-size: 10px;
+						&::-webkit-input-placeholder{
+							font-size: 10px;
+						}
+						&::-moz-placeholder{
+							font-size: 10px;
+						}
+						&:-ms-input-placeholder{
+							font-size: 10px;
+						}
+						&:-moz-placeholder{
+							font-size: 10px;
+						}
+					}
+					#veiculo{
+						height: 17px;
+						font-size: 10px;
+					}
+					input[type="submit"]{
+						height: 40px;
+						font-size: 13px;
+					}
+					p{
+						font-size: 8px;
+					}
+					.compre-online{
+						font-size: 13px;
+					}
+				}
+				.grade-scroll{
+					.grade-content{
+						padding: 0 3%;
+						.linha-titulo{
+							.titulo-solucoes{
+								h2{
+									font-size: 20px;
+									span{
+										padding: 0 10px;
+									}
+									span:nth-of-type(1){
+										padding-top: 10px;
+									}
+									span:nth-of-type(2){
+										height: 45px;
+										line-height: 45px;
+									}
+									span:nth-of-type(3){
+										padding-bottom: 10px;
+									}
+								}
+							}
+						}
+						.linha-funcionamento{
+							div{
+								h2{
+									font-size: 20px;
+									span{
+										height: 45px;
+										line-height: 45px;
+										padding: 0 10px;
+									}
+								}
+								&:nth-of-type(2){
+									p{
+										font-size: 12px;
+									}
+								}
+							}
+						}
+						.funciona-solucoes{
+							.grade-solucoes{
+								.solucoes-preco{
+									h3{
+										font-size: 15px;
+										margin-top: 10px;
+										margin-bottom: 5px;
+									}
+									.caixa-preco{
+										max-height: 130px;
+										.caixa-content{
+											.partir-cifrao{
+												.partir{
+													font-size: 11px;
+												}
+												.cifrao{
+													font-size: 17px;
+												}
+											}
+											.cinq-dois{
+												font-size: 56px;
+											}
+											.zeros{
+												font-size: 26px;
+											}
+											.mensais{
+												font-size: 11px;
+											}
+										}
+									}
+								}
+								.solucoes-texto{
+									h4{
+										font-size: 12px;
+									}
+									.texto-e-bg{
+										font-size: 12px;
+									}
+									p{
+										font-size: 12px;
+									}
+								}
+							}
+						}
+					}
+					#footer{
+						padding: 0 3%;
+						font-size: 8px;
+					}
+				}
+			}
+		}
+	}
+}

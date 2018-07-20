@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tracker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" type="text/css" href="css/tracker.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<!--endbuild-->
+	<link rel="icon" href="img/favicon.gif" sizes="32x32" />
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MF6N2GL');</script>
+	<!-- End Google Tag Manager -->
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF6N2GL"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="main-wrapper">
+		<div class="main">
+			<header>
+				<div class="logo-wrapper">
+					<a id="logo" href="http://solucoestracker.com.br/">
+						<h1>Tracker</h1>
+					</a>
+				</div>
+				<div class="menu">
+					<a class="tel-header menu-item" href="tel:03004005000">
+						<p class="coteAgora">
+							Cote agora pelo telefone!
+						</p>
+					</a>
+					<a class="compre-header menu-item" href="https://lojatracker.com.br/index.php/checkout/" target="_blank">
+						<img src="img/compre-online-tracker.png" alt="Compre Online"/>
+						<img src="img/orcamento-icon-tracker.png" alt="Compre Online" class="mobile" />
+					</a>
+					<a class="faq-header menu-item" href="#">
+						<img src="img/duvidas-frequentes-tracker.png" alt="Dúvidas Frequentes"/>
+						<img src="img/faq-icon-tracker.png" alt="Dúvidas Frequentes" class="mobile">
+					</a>
+				</div>
+			</header>
+			<section>
+				<div class="menu-mob">
+					<a class="tel-mob" href="tel:03004005000">
+						<p class="coteAgora">
+							Cote agora pelo telefone!
+						</p>
+					</a>
+				</div>
+			</section>
+			<section id="content">
+				<div id="loader"></div>
+				<form class="grade-form">
+					<div id="card" class="wow zoomIn" data-wow-delay="700ms">
+						<div class="front">
+							<div class="flip-content">
+								<h2>
+									<span>Entre em contato e </span>
+									<span>Receba uma Cotação!</span>
+								</h2>
+								<input type="text" id="nome" name="nome" placeholder="NOME" />
+								<input type="email" id="email" name="email" placeholder="E-MAIL" />
+								<input type="text" id="cel" name="celular" placeholder="CELULAR" />
+								<input type="text" id="tel" name="telefone" placeholder="TELEFONE" />
+								<select id="veiculo">
+									<option>Automóvel</option>
+									<option>Moto</option>
+									<option>Caminhão</option>
+								</select>
+								<input type="text" id="modelo" name="modelo" placeholder="MODELO" />
+								<input type="submit" class="button" id="submit" value="Solicite sua cotação">
+							</div>
+							<p>OU</p>
+							<a href="https://lojatracker.com.br/index.php/checkout/" target="_blank" class="compre-online">Compre Online</a>
+						</div>
+						<div class="back">
+							<div class="flip-content">
+								<h2>
+									<span class="title">Obrigado!</span>
+									<span class="text">Em breve nossa central de relacionamento Tracker entrará em contato com você!</span>
+									<img src="img/phone-bg.png">
+								</h2>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="grade-scroll">
+					<div class="grade-content">
+						<div class="linha-titulo">
+							<div class="titulo-solucoes">
+								<h2>
+									<span class="wow fadeInLeft" data-wow-delay="50ms">Soluções para</span>
+									<span class="wow fadeInLeft" data-wow-delay="100ms">Proteção e Gestão de</span>
+									<span class="wow fadeInLeft" data-wow-delay="150ms">Seu Veículo</span>
+								</h2>
+							</div>
+							<div class="titulo-solucoes">
+								<p class="wow fadeInRight" data-wow-delay="300ms">
+									Com <span>20 anos</span> de experiência, estamos presentes em <span>13 países</span> dos continentes americanos e europeu. No Brasil, o Grupo Tracker atua desde 2000.
+								</p>
+							</div>
+						</div>
+						<div id="carro" class="carousel wow fadeInUp" data-wow-delay="450ms">
+							<img src="img/banners_seguro_01.png" alt="Tracker com Seguro" />
+							<img src="img/banners_home_05.png" alt="Planos para Automóveis" />
+						</div>
+						<div class="linha-funcionamento">
+							<div>
+								<h2 class="wow fadeInLeft" data-wow-delay="100ms">
+									<span>Como Funciona</span>
+								</h2>
+							</div>
+							<div>
+								<p class="wow flipInX" data-wow-delay="200ms">
+									<span>Entenda todo o processo de recuperação de seu veículo.</span>
+								</p>
+							</div>
+						</div>
+						<div class="funciona-solucoes wow fadeInLeft" data-wow-delay="300ms">
+							<div class="tracker-seguro grade-solucoes">
+									<div class="solucoes-preco">
+										<h3>
+											<span>Rastreador</span>
+											<span>Tracker com Seguro</span>
+										</h3>
+										<div class="caixa-preco">
+											<div class="caixa-content">
+												<div class="partir-cifrao">
+													<div class="partir">
+														<p>
+															a partir de
+														</p>
+													</div>
+													<div class="cifrao">
+														<p>
+															R$
+														</p>
+													</div>
+												</div>
+												<div class="cinq-dois">
+													<p>
+														45,
+													</p>
+												</div>
+												<div class="zeros">
+													<p>90</p>
+												</div>
+												<div class="mensais">
+													<p>Mensais</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="solucoes-texto">
+										<div class="espaco-texto">&nbsp</div>
+										<h4>
+											Conheça a Solução
+										</h4>
+										<p class="texto-e-bg">
+											Rastreie o veículo em casos de roubo/furto com a tecnologia de Radiofrequência. Esta é a solução mais eficaz na localização de seu veículo, permanecendo em modo “sleep” até que você nos informe sobre o roubo/furto. Ele mantém total sigilo de seu deslocamento no dia a dia com pronta resposta e cobertura de seguro em caso de roubo ou furto e não recuperação de até 100% da Tabela FIPE.
+										</p>
+										<p>
+											Não fique na mão e inclua também o Serviço de Assistência 24hs e tenha a sua disposição chaveiro, guincho, troca de pneus, entre outros.
+										</p>
+									</div>
+								</div>
+							<div class="roubo-furto grade-solucoes">
+								<div class="solucoes-preco">
+									<h3>
+										<span>Rastreador</span>
+										<span>para Roubo e Furto</span>
+									</h3>
+									<div class="caixa-preco">
+										<div class="caixa-content">
+											<div class="partir-cifrao">
+												<div class="partir">
+													<p>
+														a partir de
+													</p>
+												</div>
+												<div class="cifrao">
+													<p>
+														R$
+													</p>
+												</div>
+											</div>
+											<div class="cinq-dois">
+												<p>
+													52,
+												</p>
+											</div>
+											<div class="zeros">
+												<p>00</p>
+											</div>
+											<div class="mensais">
+												<p>Mensais</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="solucoes-texto">
+									<div class="espaco-texto">&nbsp</div>
+									<h4>
+										Conheça a Solução
+									</h4>
+									<p class="texto-e-bg">
+										Rastreie o veículo em casos de roubo/furto com a tecnologia de Radiofrequência. Esta é a solução mais eficaz na localização de seu veículo, permanecendo em modo “sleep” até que você nos informe sobre o roubo/furto. Ele mantém total sigilo de seu deslocamento no dia a dia.
+									</p>
+									<p>
+										Não fique na mão e inclua também o Serviço de Assistência 24hs e tenha a sua disposição chaveiro, guincho, troca de pneus, entre outros.
+									</p>
+								</div>
+							</div>
+							<div class="visu-web grade-solucoes">
+								<div class="solucoes-preco">
+									<h3>
+										<span>Rastreador</span>
+										<span>com visualização na web</span>
+									</h3>
+									<div class="caixa-preco">
+										<div class="caixa-content">
+											<div class="partir-cifrao">
+												<div class="partir">
+													<p>
+														a partir de
+													</p>
+												</div>
+												<div class="cifrao">
+													<p>
+														R$
+													</p>
+												</div>
+											</div>
+											<div class="cinq-dois">
+												<p>
+													45,
+												</p>
+											</div>
+											<div class="zeros">
+												<p>00</p>
+											</div>
+											<div class="mensais">
+												<p>Mensais</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="solucoes-texto">
+									<div class="espaco-texto">&nbsp</div>
+									<h4>
+										Conheça a Solução
+									</h4>
+									<p class="texto-e-bg">
+										Monitore seu veículo pela Web ou Smartphone com a tecnologia de GPS. Esta é a solução ideal para controlar e saber o paradeiro de seu veículo, auxiliando também a localização caso ele for roubado/furtado. Em casos de frotas de veículos, poderá gerenciar e fazer um monitoramento completo de sua operação.
+									</p>
+									<p>
+										Não fique na mão e inclua também o Serviço de Assistência 24hs e tenha a sua disposição chaveiro, guincho, troca de pneus, entre outros.
+									</p>
+								</div>
+							</div>
+							<div class="roubo-web grade-solucoes">
+								<div class="solucoes-preco">
+									<h3>
+										<span>Rastreador para Roubo e</span>
+										<span>Furto + Visualização na Web</span>
+									</h3>
+									<div class="caixa-preco">
+										<div class="caixa-content">
+											<div class="partir-cifrao">
+												<div class="partir">
+													<p>
+														a partir de
+													</p>
+												</div>
+												<div class="cifrao">
+													<p>
+														R$
+													</p>
+												</div>
+											</div>
+											<div class="cinq-dois">
+												<p>
+													82,
+												</p>
+											</div>
+											<div class="zeros">
+												<p>00</p>
+											</div>
+											<div class="mensais">
+												<p>Mensais</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="solucoes-texto">
+									<div class="espaco-texto">&nbsp</div>
+									<h4>
+										Conheça a Solução
+									</h4>
+									<p class="texto-e-bg">
+										Tenha a solução mais completa para sua proteção. Com o rastreador para roubo e furto + o rastreador com visualização na Web, você terá duas tecnologias e não apenas uma para se sentir mais seguro e ainda poderá acompanhar o seu veículo pela internet. Em casos de frotas de veículos, poderá gerenciar e fazer um monitoramento completo de sua operação e ficar duplamente protegido.		
+									</p>
+									<p>
+										Não fique na mão e inclua também o Serviço de Assistência 24hs e tenha a sua disposição chaveiro, guincho, troca de pneus, entre outros.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div id="moto" class="carousel">
+							<img src="img/banners_moto_01.png" alt="Planos para Motos" />
+						</div>
+						<div class="linha-funcionamento">
+							<div>
+								<h2>
+									<span>Como Funciona</span>
+								</h2>
+							</div>
+							<div>
+								<p>
+									<span>Entenda todo o processo de recuperação da sua moto.</span>
+								</p>
+							</div>
+						</div>
+						<div class="funciona-solucoes">
+							<div class="roubo-furto grade-solucoes">
+								<div class="solucoes-preco">
+									<h3>
+										<span>Rastreador</span>
+										<span>para Roubo e Furto</span>
+									</h3>
+									<div class="caixa-preco">
+										<div class="caixa-content">
+											<div class="partir-cifrao">
+												<div class="partir">
+													<p>
+														a partir de
+													</p>
+												</div>
+												<div class="cifrao">
+													<p>
+														R$
+													</p>
+												</div>
+											</div>
+											<div class="cinq-dois">
+												<p>
+													56,
+												</p>
+											</div>
+											<div class="zeros">
+												<p>00</p>
+											</div>
+											<div class="mensais">
+												<p>Mensais</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="solucoes-texto">
+									<div class="espaco-texto">&nbsp</div>
+									<h4>
+										Conheça a Solução
+									</h4>
+									<p class="texto-e-bg">
+										Rastreie a moto em casos de roubo/furto com a tecnologia de Radiofrequência. Esta é a solução mais eficaz na localização de sua moto, permanecendo em modo “sleep” até que você nos informe sobre o roubo/furto. Ele mantém total sigilo de seu deslocamento no dia a dia.
+									</p>
+									<p>
+										Não fique na mão e inclua também o Serviço de Assistência 24hs e tenha a sua disposição chaveiro, guincho, troca de pneus, entre outros.
+									</p>
+								</div>
+							</div>
+							<div class="visu-web grade-solucoes">
+								<div class="solucoes-preco">
+									<h3>
+										<span>Rastreador</span>
+										<span>com visualização na web</span>
+									</h3>
+									<div class="caixa-preco">
+										<div class="caixa-content">
+											<div class="partir-cifrao">
+												<div class="partir">
+													<p>
+														a partir de
+													</p>
+												</div>
+												<div class="cifrao">
+													<p>
+														R$
+													</p>
+												</div>
+											</div>
+											<div class="cinq-dois">
+												<p>
+													45,
+												</p>
+											</div>
+											<div class="zeros">
+												<p>00</p>
+											</div>
+											<div class="mensais">
+												<p>Mensais</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="solucoes-texto">
+									<div class="espaco-texto">&nbsp</div>
+									<h4>
+										Conheça a Solução
+									</h4>
+									<p class="texto-e-bg">
+										Monitore sua moto pela Web ou Smartphone com a tecnologia de GPS. Esta é a solução ideal para controlar e saber o paradeiro de sua moto, auxiliando também a localização caso ela for roubada/furtada. Em casos de frotas de motos, poderá gerenciar e fazer um monitoramento completo de sua operação.
+									</p>
+									<p>
+										Não fique na mão e inclua também o Serviço de Assistência 24hs e tenha a sua disposição chaveiro, guincho, troca de pneus, entre outros.
+									</p>
+								</div>
+							</div>
+							<div class="roubo-web grade-solucoes">
+								<div class="solucoes-preco">
+									<h3>
+										<span>Rastreador para Roubo e</span>
+										<span>Furto + Visualização na Web</span>
+									</h3>
+									<div class="caixa-preco">
+										<div class="caixa-content">
+											<div class="partir-cifrao">
+												<div class="partir">
+													<p>
+														a partir de
+													</p>
+												</div>
+												<div class="cifrao">
+													<p>
+														R$
+													</p>
+												</div>
+											</div>
+											<div class="cinq-dois">
+												<p>
+													86,
+												</p>
+											</div>
+											<div class="zeros">
+												<p>00</p>
+											</div>
+											<div class="mensais">
+												<p>Mensais</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="solucoes-texto">
+									<div class="espaco-texto">&nbsp</div>
+									<h4>
+										Conheça a Solução
+									</h4>
+									<p class="texto-e-bg">
+										Tenha a solução mais completa para sua proteção. Com o rastreador para roubo e furto + o rastreador com visualização na Web, você terá duas tecnologias e não apenas uma para se sentir mais seguro e ainda poderá acompanhar a sua moto pela internet. Em casos de frotas de motos, poderá gerenciar e fazer um monitoramento completo de sua operação e ficar duplamente protegido.		
+									</p>
+									<p>
+										Não fique na mão e inclua também o Serviço de Assistência 24hs e tenha a sua disposição chaveiro, guincho, troca de pneus, entre outros.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div id="caminhao" class="carousel">
+							<img src="img/banners_caminhao_01.png" alt="Planos para Caminhões" />
+						</div>
+						<div class="linha-funcionamento">
+							<div>
+								<h2>
+									<span>Como Funciona</span>
+								</h2>
+							</div>
+							<div>
+								<p>
+									<span>Entenda todo o processo de recuperação de seu caminhão.</span>
+								</p>
+							</div>
+						</div>
+						<div class="funciona-solucoes">
+							<div class="roubo-furto grade-solucoes">
+								<div class="solucoes-preco">
+									<h3>
+										<span>Rastreador</span>
+										<span>para Roubo e Furto</span>
+									</h3>
+									<div class="caixa-preco">
+										<div class="caixa-content">
+											<div class="partir-cifrao">
+												<div class="partir">
+													<p>
+														a partir de
+													</p>
+												</div>
+												<div class="cifrao">
+													<p>
+														R$
+													</p>
+												</div>
+											</div>
+											<div class="cinq-dois">
+												<p>
+													56,
+												</p>
+											</div>
+											<div class="zeros">
+												<p>00</p>
+											</div>
+											<div class="mensais">
+												<p>Mensais</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="solucoes-texto">
+									<div class="espaco-texto">&nbsp</div>
+									<h4>
+										Conheça a Solução
+									</h4>
+									<p class="texto-e-bg">
+										Rastreie o caminhão em casos de roubo/furto com a tecnologia de Radiofrequência. Esta é a solução mais eficaz na localização de seu caminhão, permanecendo em modo “sleep” até que você nos informe sobre o roubo/furto. Ele mantém total sigilo de seu deslocamento no dia a dia.
+									</p>
+									<p>
+										Não fique na mão e inclua também o Serviço de Assistência 24hs e tenha a sua disposição chaveiro, guincho, troca de pneus, entre outros.
+									</p>
+								</div>
+							</div>
+							<div class="visu-web grade-solucoes">
+								<div class="solucoes-preco">
+									<h3>
+										<span>Rastreador</span>
+										<span>com visualização na web</span>
+									</h3>
+									<div class="caixa-preco">
+										<div class="caixa-content">
+											<div class="partir-cifrao">
+												<div class="partir">
+													<p>
+														a partir de
+													</p>
+												</div>
+												<div class="cifrao">
+													<p>
+														R$
+													</p>
+												</div>
+											</div>
+											<div class="cinq-dois">
+												<p>
+													45,
+												</p>
+											</div>
+											<div class="zeros">
+												<p>00</p>
+											</div>
+											<div class="mensais">
+												<p>Mensais</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="solucoes-texto">
+									<div class="espaco-texto">&nbsp</div>
+									<h4>
+										Conheça a Solução
+									</h4>
+									<p class="texto-e-bg">
+										Monitore seu caminhão pela Web ou Smartphone com a tecnologia de GPS. Esta é a solução ideal para controlar e saber o paradeiro de seu caminhão, auxiliando também a localização caso ele for roubado/furtado. Em casos de frotas de caminhões, poderá gerenciar e fazer um monitoramento completo de sua operação.
+									</p>
+									<p>
+										Não fique na mão e inclua também o Serviço de Assistência 24hs e tenha a sua disposição chaveiro, guincho, troca de pneus, entre outros.
+									</p>
+								</div>
+							</div>
+							<div class="roubo-web grade-solucoes">
+								<div class="solucoes-preco">
+									<h3>
+										<span>Rastreador para Roubo e</span>
+										<span>Furto + Visualização na Web</span>
+									</h3>
+									<div class="caixa-preco">
+										<div class="caixa-content">
+											<div class="partir-cifrao">
+												<div class="partir">
+													<p>
+														a partir de
+													</p>
+												</div>
+												<div class="cifrao">
+													<p>
+														R$
+													</p>
+												</div>
+											</div>
+											<div class="cinq-dois">
+												<p>
+													86,
+												</p>
+											</div>
+											<div class="zeros">
+												<p>00</p>
+											</div>
+											<div class="mensais">
+												<p>Mensais</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="solucoes-texto">
+									<div class="espaco-texto">&nbsp</div>
+									<h4>
+										Conheça a Solução
+									</h4>
+									<p class="texto-e-bg">
+										Tenha a solução mais completa para sua proteção. Com o rastreador para roubo e furto + o rastreador com visualização na Web, você terá duas tecnologias e não apenas uma para se sentir mais seguro e ainda poderá acompanhar o seu caminhão pela internet. Em casos de frotas de caminhões, poderá gerenciar e fazer um monitoramento completo de sua operação e ficar duplamente protegido.		
+									</p>
+									<p>
+										Não fique na mão e inclua também o Serviço de Assistência 24hs e tenha a sua disposição chaveiro, guincho, troca de pneus, entre outros.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="footer">
+						<p>
+							© Copyright 2017  .  Grupo Tracker  .  Todos os direitos reservados
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="modal seg-modal">
+				<div class="grade-modal">
+					<div class="header">
+						<h2>Rastreador Tracker com Seguro</h2>
+						<h3>Radiofrequência</h3>
+						<img src="img/botao-fechar.png" alt="X" class="botao-fechar" />
+					</div>
+					<hr>
+					<div class="conteudo">
+						<img src="img/seguro.png" alt="Entenda o Processo" />
+					</div>
+				</div>
+			</section>
+			<section class="modal rast-modal">
+				<div class="grade-modal">
+					<div class="header">
+						<h2>Rastreador para roubo e furto</h2>
+						<h3>Radiofrequência</h3>
+						<img src="img/botao-fechar.png" alt="X" class="botao-fechar" />
+					</div>
+					<hr>
+					<div class="conteudo">
+						<img src="img/rf.png" alt="Entenda o Processo" />
+					</div>
+				</div>
+			</section>
+			<section class="modal gps-modal">
+				<div class="grade-modal">
+					<div class="header">
+						<h2>Rastreador com visualização na web</h2>
+						<h3>GPS / GPRS</h3>
+						<img src="img/botao-fechar.png" alt="X" class="botao-fechar" />
+					</div>
+					<hr>
+					<div class="conteudo">
+						<img src="img/gps.png" alt="Entenda o Processo">
+					</div>
+				</div>
+			</section>
+			<section class="modal log-modal">
+				<div class="grade-modal">
+					<div class="header">
+						<h2>Rastreador para roubo e furto + visualização na web</h2>
+						<h3>Radiofrequência + GPS / GPRS</h3>
+						<img src="img/botao-fechar.png" alt="X" class="botao-fechar" />
+					</div>
+					<hr>
+					<div class="conteudo">
+						<img src="img/log.png" alt="Entenda o Processo">
+					</div>
+				</div>
+			</section>
+			<section class="modal faq-modal">
+				<div class="grade-modal">
+					<div class="header">
+						<h2>Perguntas Frequentes</h2>
+						<h3>Confira quais são as principais dúvidas</h3>
+						<img src="img/botao-fechar.png" alt="X" class="botao-fechar" />
+					</div>
+					<hr>
+					<h4>Perguntas e Respostas</h4>
+					<div class="conteudo">
+						<h5>QUEM É A TRACKER?</h5>
+						<p>
+							Nós oferecemos as melhores soluções de Rastreamento e Monitoramento para veículos, frotas e cargas, utilizando tecnologias de ponta, como Radiofrequência, GSM/GPRS e GPS/GPRS. Com 20 anos de experiência, e presente em mais de 10 países dos continentes americano e europeu, atuamos no Brasil desde o ano 2000. Entre nossas conquistas mundiais estão 80.000 veículos recuperados, 2.500 colaboradores e 800.000 clientes. Nossa sede fica na Rua Federação Paulista de Futebol, 777 – Várzea da Barra Funda, São Paulo/SP. ET DO BRASIL LTDA (Grupo Tracker), inscrita no CNPJ/MF sob o nº 02.927.956/0001-69.
+						</p>
+
+						<h5>QUAIS AS DIFERENÇAS ENTRE OS PRODUTOS DE MONITORAMENTO E RASTREAMENTO?</h5>
+						<p>
+							Produtos para Monitoramento e/ou Gerenciamento logístico possuem a tecnologia GPS/GPRS, o que possibilita que você acompanhe seu veículo em tempo real. Além disso, você pode emitir relatórios gerenciais, estabelecer controle de velocidade, entre outros recursos. Já os produtos para Rastreamento são baseados na tecnologia de Radiofrequência. Eles são os mais recomendados para casos de roubo e furto, pois são imunes a ação de inibidores de sinais, e possibilitam o rastreamento do veículo até mesmo em ambientes fechados, como túneis, garagens e subsolos.
+						</p>
+
+						<h5>EM QUAIS VEÍCULOS É POSSÍVEL INSTALAR OS EQUIPAMENTOS TRACKER?</h5>
+						<p>
+							Não há restrição de modelos ou ano de fabricação. No caso de rastreamento (radiofrequência) de motos, é preciso verificar se o modelo é homologado pela Tracker.
+						</p>
+
+						<h5>O QUE SIGNIFICA "MOTOS HOMOLOGADAS"?</h5>
+						<p>
+							É uma avaliação feita por nossos técnicos com o objetivo de obter o melhor resultado no processo de rastreamento da moto. O processo de homologação avalia a possibilidade de instalação do equipamento, garantindo que se respeitem as características técnicas de cada moto, bem como a melhor camuflagem do produto.
+						</p>
+
+						<h5>POR QUE NÃO APARECE A OPÇÃO DO PRODUTO DE RASTREAMENTO PARA MINHA MOTO?</h5>
+						<p>
+							Se a oferta é apenas do produto Moto GPS é porque sua moto não está entre a relação de homologadas pela Tracker. Caso você tenha interesse em homologar, entre em contato com a nossa central de vendas pelo número 0300 400 5000 e obtenha todas as informações.
+						</p>
+
+						<h5>JÁ TENHO UM RASTREADOR E/OU GPS NO MEU CARRO, POSSO ADQUIRIR UM DOS PRODUTOS DA TRACKER E FICAR COM DOIS EQUIPAMENTOS INSTALADOS?</h5>
+						<p>
+							Sim, desde que não utilize acessórios da concorrência. Porém é importante deixar claro que a responsabilidade do Grupo Tracker está atrelada somente aos seus próprios produtos.
+						</p>
+
+						<h5>QUAL A ÁREA DE COBERTURA DA TRACKER?</h5>
+						<p>
+							Produtos para monitoramento possuem cobertura nacional. Já o Rastreamento tem cobertura nacional e internacional (Bolívia, Chile, Colômbia, Paraguai e Venezuela).
+						</p>
+
+						<h5>SÓ É POSSÍVEL PAGAR COM CARTÃO DE CRÉDITO?</h5>
+						<p>
+							Sim, na lojatracker.com.br só está disponível o pagamento com cartão de crédito das bandeiras Visa e Master. Caso você prefira pagar com boleto bancário entre em contato na central de vendas pelo número 0300 400 5000.
+						</p>
+
+						<h5>ESSA COMPRA É 100% SEGURA?</h5>
+						<p>
+							Para garantir uma operação 100% segura, os dados de sua compra são criptografados. A criptografia é um sistema de codificação de informações criado para garantir que ninguém, em nenhuma hipótese, tenha acesso aos seus dados. Nenhuma informação trafega pela rede sem ser criptografada, utilizando os melhores sistemas disponíveis no mercado. A proteção é absoluta.
+						</p>
+
+						<h5>POR QUE RECEBI A MENSAGEM DE PEDIDO EM PROCESSAMENTO?</h5>
+						<p>
+							Em breve nossa central de relacionamento Tracker entrará em contato para finalizar o processo de agendamento por Telefone.
+						</p>
+
+						<h5>QUAL É A DOCUMENTAÇÃO NECESSÁRIA PARA INSTALAÇÃO?</h5>
+						<p>
+							No momento da instalação, você precisa ter em mãos: Certificado de propriedade do veículo; Cópia da identidade/CNH ou CNPJ; e Comprovante de endereço. Lembramos que o veículo deverá ter emplacamento definitivo.
+						</p>
+
+						<h5>HÁ NECESSIDADE DE FAZER REVISÃO NOS EQUIPAMENTOS TRACKER?</h5>
+						<p>
+							Sim, a revisão deve ser feita periodicamente ou por manutenção.
+						</p>
+						<p>
+							Equipamento Monitoramento<br>
+							Automóvel / Pick-up / Motocicleta / Caminhão = Diante de qualquer anormalidade diagnosticada junto à área de monitoramento
+						</p>
+						<p>
+							Equipamento LOG<br>
+							Automóvel / Pick-up = 2 anos, Motocicleta = 2 anos, Caminhão = 2 anos
+						</p>
+						<p>
+							Atenção: Caso o veículo onde o equipamento esteja instalado passe por alguma manutenção, é necessário agendar uma revisão para verificar se o equipamento sofreu alguma interferência. Da mesma forma, uma revisão precisa ser efetuada após acidentes de trânsito e em caso de veículos recuperados após roubo e furto.
+						</p>
+
+						<h5>COMO ATIVO O SISTEMA APÓS ROUBO E FURTO?</h5>
+						<p>
+							Após a ocorrência, o proprietário ou responsável deve comunicar a Central de Aviso do Grupo Tracker, através do telefone entregue junto com o Kit do Usuário recebido no momento da instalação do equipamento. Em seguida, deve informar a polícia (190) e registrar o Boletim de Ocorrência. Após o aviso, o equipamento é acionado e dá-se início ao rastreamento do veículo.
+						</p>
+
+						<h5>QUAIS OS FATORES QUE PODEM IMPEDIR A LOCALIZAÇÃO DO MEU VEÍCULO?</h5>
+						<p>
+							- A demora no tempo de aviso, o que possibilita ao bandido desmanchar o veículo;
+							- Falta de revisões periódicas;
+							- Falta de revisões pós-manutenção por colisão ou intervenção na parte elétrica ou mecânica do veículo;
+							- Falta de sinal GPRS na região do sinistro, para equipamentos do tipo GPS/GPRS.
+						</p>
+
+						<h5>TELEFONES ÚTEIS</h5>
+						<p>
+							SAC / Dúvidas, Agendamento, Cancelamento = 0800 11 7172<br><br>
+							
+							Central de Aviso / Aviso de Roubo ou Furto = 0800 77 28476<br><br>
+							
+							Televendas / Aquisição para Empresas e Compra por telefone = 0300 400 5000<br><br>
+						</p>
+
+						<h5>POSSO TROCAR O EQUIPAMENTO DE VEÍCULO?</h5>
+						<p>
+							Não, para isso é necessário cancelar o plano e fazer nova aquisição
+						</p>
+
+						<h5>CASO EU VENDA O VEÍCULO É POSSÍVEL PASSAR O PLANO PARA O COMPRADOR?</h5>
+						<p>
+							Sim, basta entrar em contato com SAC e solicitar a transferência de titularidade.
+						</p>
+
+						<h5>POR QUE EU DEVO DEVOLVER O EQUIPAMENTO NO CANCELAMENTO DO CONTRATO?</h5>
+						<p>
+							Porque a Tracker comercializa seus equipamentos em comodato e não como venda. A sigla CDU presente nos contratos significa Cessão de Direito de Uso. No caso da não devolução o cliente deverá pagar a taxa de desmonte virtual.
+						</p>
+
+						<h5>É NECESSÁRIO SOLICITAR RENOVAÇÃO DO SERVIÇO?</h5>
+						<p>
+							Não, pois os planos comercializados no e-commerce são de 24 meses com renovação automática.
+						</p>
+
+						<h5>QUANDO OS VALORES SERÃO REAJUSTADOS E QUAL A TAXA UTILIZADA?</h5>
+						<p>
+							Conforme cláusulas contratuais, os valores sofrem reajustes a cada 12 meses, com base no IGPM/FGV.
+						</p>
+
+						<h5>O QUE SIGNIFICA CADA SERVIÇO AUXILIAR?</h5>
+						<p>
+							REVISÃO<br>
+							Serviço de revisão do equipamento por periodicidade ou manutenção. É necessário levar o veículo até um ponto de instalação da rede credenciada Tracker.
+							<br><br>
+							DESMONTE FÍSICO<br>
+							Serviço de desinstalação do equipamento realizado por rede credenciada Tracker, o equipamento fica em poder do ponto de instalação.
+							<br><br>
+							DESMONTE VIRTUAL<br>
+							Serviço de desinstalação virtual, ou seja, equipamento é desligado sistemicamente e não é necessário ir até um ponto de instalação.
+						</p>
+
+						<h5>COMO FUNCIONA O SERVIÇO DE ASSISTÊNCIA 24 HORAS?</h5>
+						<p>
+							O serviço é prestado pela Mondial Assistance, empresa parceira do Grupo Tracker. Estão inclusos no pacote os seguintes serviços:<br>
+							- Socorro mecânico
+							- Troca de pneus
+							- Envio de chaveiro
+							- Reboque em caso de acidente
+							- Reboque em caso de pane
+							- Resgate do veículo
+							- Meio de transporte alternativo
+							- Hospedagem do cliente
+							- Remoção médica
+							- Translado de corpo<br><br>
+							Cada serviço pode ser utilizado no máximo duas vezes por ano, e para solicitar o atendimento basta ligar no número 0800 770 7448. Importante reforçar que a Assistência 24 horas não está inclusa na prestação de serviços do Grupo Tracker, podendo ser contratado separadamente no momento da aquisição.
+						</p>
+
+						<h4>Tracker com seguro</h4>
+
+						<h5>QUAL A SEGURADORA DO PRODUTO TRACKER COM SEGURO?</h5>
+						<p>
+							O produto Tracker com Seguro é uma parceria entre a Tracker e a Seguradora QBE, que oferece condições especiais para clientes com rastreador Tracker. A cobertura deste seguro é exclusiva para caso de roubo ou furto, e caso não haja localização do veículo a indenização pode chegar até 100% da tabela FIPE conforme apólice do segurado.
+						</p>
+
+						<h5>POR QUE NÃO APARECE A OPÇÃO DO PRODUTO TRACKER COM SEGURO PARA MEU AUTOMÓVEL/PICK-UP?</h5>
+						<p>
+							Isso acontece porque não disponibilizamos este produto para seu veículo ou região.
+						</p>
+
+						<h5>POR QUANTO TEMPO ESTAREI SEGURADO?</h5>
+						<p>
+							A apólice tem vigência de 12 meses podendo ser renovada a cada ano.
+						</p>
+
+						<h5>EM QUAL MOMENTO MEU VEÍCULO PASSA A ESTAR SEGURADO?</h5>
+						<p>
+							O automóvel só estará coberto após o recebimento do certificado de seguro que será emitido em até 24 horas após a instalação do equipamento.
+						</p>
+
+						<h5>ONDE DEVO LIGAR NO CASO DE ROUBO E FURTO?</h5>
+						<p>
+							Em primeiro lugar, deve comunicar a Central de Aviso do Grupo Tracker, em seguida realizar o Boletim de Ocorrência junto às entidades policiais. Por último, basta informar a seguradora para também registrar o sinistro.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="modal faq-modal">
+				<div class="grade-modal">
+					<div class="header">
+						<h2>Perguntas Frequentes</h2>
+						<h3>Confira quais são as principais dúvidas</h3>
+						<img src="img/botao-fechar.png" alt="X" class="botao-fechar" />
+					</div>
+					<hr>
+					<div class="conteudo">
+						<h4>Perguntas e Respostas</h4>
+						<h5>QUEM É A TRACKER?</h5>
+						<p>
+							Nós oferecemos as melhores soluções de Rastreamento e Monitoramento para veículos, frotas e cargas, utilizando tecnologias de ponta, como Radiofrequência, GSM/GPRS e GPS/GPRS. Com 20 anos de experiência, e presente em mais de 10 países dos continentes americano e europeu, atuamos no Brasil desde o ano 2000. Entre nossas conquistas mundiais estão 80.000 veículos recuperados, 2.500 colaboradores e 800.000 clientes. Nossa sede fica na Rua Federação Paulista de Futebol, 777 – Várzea da Barra Funda, São Paulo/SP. ET DO BRASIL LTDA (Grupo Tracker), inscrita no CNPJ/MF sob o nº 02.927.956/0001-69.
+						</p>
+
+						<h5>QUAIS AS DIFERENÇAS ENTRE OS PRODUTOS DE MONITORAMENTO E RASTREAMENTO?</h5>
+						<p>
+							Produtos para Monitoramento e/ou Gerenciamento logístico possuem a tecnologia GPS/GPRS, o que possibilita que você acompanhe seu veículo em tempo real. Além disso, você pode emitir relatórios gerenciais, estabelecer controle de velocidade, entre outros recursos. Já os produtos para Rastreamento são baseados na tecnologia de Radiofrequência. Eles são os mais recomendados para casos de roubo e furto, pois são imunes a ação de inibidores de sinais, e possibilitam o rastreamento do veículo até mesmo em ambientes fechados, como túneis, garagens e subsolos.
+						</p>
+
+						<h5>EM QUAIS VEÍCULOS É POSSÍVEL INSTALAR OS EQUIPAMENTOS TRACKER?</h5>
+						<p>
+							Não há restrição de modelos ou ano de fabricação. No caso de rastreamento (radiofrequência) de motos, é preciso verificar se o modelo é homologado pela Tracker.
+						</p>
+
+						<h5>O QUE SIGNIFICA "MOTOS HOMOLOGADAS"?</h5>
+						<p>
+							É uma avaliação feita por nossos técnicos com o objetivo de obter o melhor resultado no processo de rastreamento da moto. O processo de homologação avalia a possibilidade de instalação do equipamento, garantindo que se respeitem as características técnicas de cada moto, bem como a melhor camuflagem do produto.
+						</p>
+
+						<h5>POR QUE NÃO APARECE A OPÇÃO DO PRODUTO DE RASTREAMENTO PARA MINHA MOTO?</h5>
+						<p>
+							Se a oferta é apenas do produto Moto GPS é porque sua moto não está entre a relação de homologadas pela Tracker. Caso você tenha interesse em homologar, entre em contato com a nossa central de vendas pelo número 0300 400 5000 e obtenha todas as informações.
+						</p>
+
+						<h5>JÁ TENHO UM RASTREADOR E/OU GPS NO MEU CARRO, POSSO ADQUIRIR UM DOS PRODUTOS DA TRACKER E FICAR COM DOIS EQUIPAMENTOS INSTALADOS?</h5>
+						<p>
+							Sim, desde que não utilize acessórios da concorrência. Porém é importante deixar claro que a responsabilidade do Grupo Tracker está atrelada somente aos seus próprios produtos.
+						</p>
+
+						<h5>QUAL A ÁREA DE COBERTURA DA TRACKER?</h5>
+						<p>
+							Produtos para monitoramento possuem cobertura nacional. Já o Rastreamento tem cobertura nacional e internacional (Bolívia, Chile, Colômbia, Paraguai e Venezuela).
+						</p>
+
+						<h5>SÓ É POSSÍVEL PAGAR COM CARTÃO DE CRÉDITO?</h5>
+						<p>
+							Sim, na lojatracker.com.br só está disponível o pagamento com cartão de crédito das bandeiras Visa e Master. Caso você prefira pagar com boleto bancário entre em contato na central de vendas pelo número 0300 400 5000.
+						</p>
+
+						<h5>ESSA COMPRA É 100% SEGURA?</h5>
+						<p>
+							Para garantir uma operação 100% segura, os dados de sua compra são criptografados. A criptografia é um sistema de codificação de informações criado para garantir que ninguém, em nenhuma hipótese, tenha acesso aos seus dados. Nenhuma informação trafega pela rede sem ser criptografada, utilizando os melhores sistemas disponíveis no mercado. A proteção é absoluta.
+						</p>
+
+						<h5>POR QUE RECEBI A MENSAGEM DE PEDIDO EM PROCESSAMENTO?</h5>
+						<p>
+							Em breve nossa central de relacionamento Tracker entrará em contato para finalizar o processo de agendamento por Telefone.
+						</p>
+
+						<h5>QUAL É A DOCUMENTAÇÃO NECESSÁRIA PARA INSTALAÇÃO?</h5>
+						<p>
+							No momento da instalação, você precisa ter em mãos: Certificado de propriedade do veículo; Cópia da identidade/CNH ou CNPJ; e Comprovante de endereço. Lembramos que o veículo deverá ter emplacamento definitivo.
+						</p>
+
+						<h5>HÁ NECESSIDADE DE FAZER REVISÃO NOS EQUIPAMENTOS TRACKER?</h5>
+						<p>
+							Sim, a revisão deve ser feita periodicamente ou por manutenção.
+						</p>
+						<p>
+							Equipamento Monitoramento<br>
+							Automóvel / Pick-up / Motocicleta / Caminhão = Diante de qualquer anormalidade diagnosticada junto à área de monitoramento
+						</p>
+						<p>
+							Equipamento LOG<br>
+							Automóvel / Pick-up = 2 anos, Motocicleta = 2 anos, Caminhão = 2 anos
+						</p>
+						<p>
+							Atenção: Caso o veículo onde o equipamento esteja instalado passe por alguma manutenção, é necessário agendar uma revisão para verificar se o equipamento sofreu alguma interferência. Da mesma forma, uma revisão precisa ser efetuada após acidentes de trânsito e em caso de veículos recuperados após roubo e furto.
+						</p>
+
+						<h5>COMO ATIVO O SISTEMA APÓS ROUBO E FURTO?</h5>
+						<p>
+							Após a ocorrência, o proprietário ou responsável deve comunicar a Central de Aviso do Grupo Tracker, através do telefone entregue junto com o Kit do Usuário recebido no momento da instalação do equipamento. Em seguida, deve informar a polícia (190) e registrar o Boletim de Ocorrência. Após o aviso, o equipamento é acionado e dá-se início ao rastreamento do veículo.
+						</p>
+
+						<h5>QUAIS OS FATORES QUE PODEM IMPEDIR A LOCALIZAÇÃO DO MEU VEÍCULO?</h5>
+						<p>
+							- A demora no tempo de aviso, o que possibilita ao bandido desmanchar o veículo;
+							- Falta de revisões periódicas;
+							- Falta de revisões pós-manutenção por colisão ou intervenção na parte elétrica ou mecânica do veículo;
+							- Falta de sinal GPRS na região do sinistro, para equipamentos do tipo GPS/GPRS.
+						</p>
+
+						<h5>TELEFONES ÚTEIS</h5>
+						<p>
+							SAC / Dúvidas, Agendamento, Cancelamento = 0800 11 7172<br><br>
+							
+							Central de Aviso / Aviso de Roubo ou Furto = 0800 77 28476<br><br>
+							
+							Televendas / Aquisição para Empresas e Compra por telefone = 0300 400 5000<br><br>
+						</p>
+
+						<h5>POSSO TROCAR O EQUIPAMENTO DE VEÍCULO?</h5>
+						<p>
+							Não, para isso é necessário cancelar o plano e fazer nova aquisição
+						</p>
+
+						<h5>CASO EU VENDA O VEÍCULO É POSSÍVEL PASSAR O PLANO PARA O COMPRADOR?</h5>
+						<p>
+							Sim, basta entrar em contato com SAC e solicitar a transferência de titularidade.
+						</p>
+
+						<h5>POR QUE EU DEVO DEVOLVER O EQUIPAMENTO NO CANCELAMENTO DO CONTRATO?</h5>
+						<p>
+							Porque a Tracker comercializa seus equipamentos em comodato e não como venda. A sigla CDU presente nos contratos significa Cessão de Direito de Uso. No caso da não devolução o cliente deverá pagar a taxa de desmonte virtual.
+						</p>
+
+						<h5>É NECESSÁRIO SOLICITAR RENOVAÇÃO DO SERVIÇO?</h5>
+						<p>
+							Não, pois os planos comercializados no e-commerce são de 24 meses com renovação automática.
+						</p>
+
+						<h5>QUANDO OS VALORES SERÃO REAJUSTADOS E QUAL A TAXA UTILIZADA?</h5>
+						<p>
+							Conforme cláusulas contratuais, os valores sofrem reajustes a cada 12 meses, com base no IGPM/FGV.
+						</p>
+
+						<h5>O QUE SIGNIFICA CADA SERVIÇO AUXILIAR?</h5>
+						<p>
+							REVISÃO<br>
+							Serviço de revisão do equipamento por periodicidade ou manutenção. É necessário levar o veículo até um ponto de instalação da rede credenciada Tracker.
+							<br><br>
+							DESMONTE FÍSICO<br>
+							Serviço de desinstalação do equipamento realizado por rede credenciada Tracker, o equipamento fica em poder do ponto de instalação.
+							<br><br>
+							DESMONTE VIRTUAL<br>
+							Serviço de desinstalação virtual, ou seja, equipamento é desligado sistemicamente e não é necessário ir até um ponto de instalação.
+						</p>
+
+						<h5>COMO FUNCIONA O SERVIÇO DE ASSISTÊNCIA 24 HORAS?</h5>
+						<p>
+							O serviço é prestado pela Mondial Assistance, empresa parceira do Grupo Tracker. Estão inclusos no pacote os seguintes serviços:<br>
+							- Socorro mecânico
+							- Troca de pneus
+							- Envio de chaveiro
+							- Reboque em caso de acidente
+							- Reboque em caso de pane
+							- Resgate do veículo
+							- Meio de transporte alternativo
+							- Hospedagem do cliente
+							- Remoção médica
+							- Translado de corpo<br><br>
+							Cada serviço pode ser utilizado no máximo duas vezes por ano, e para solicitar o atendimento basta ligar no número 0800 770 7448. Importante reforçar que a Assistência 24 horas não está inclusa na prestação de serviços do Grupo Tracker, podendo ser contratado separadamente no momento da aquisição.
+						</p>
+
+						<h4>Tracker com seguro</h4>
+
+						<h5>QUAL A SEGURADORA DO PRODUTO TRACKER COM SEGURO?</h5>
+						<p>
+							O produto Tracker com Seguro é uma parceria entre a Tracker e a Seguradora QBE, que oferece condições especiais para clientes com rastreador Tracker. A cobertura deste seguro é exclusiva para caso de roubo ou furto, e caso não haja localização do veículo a indenização pode chegar até 100% da tabela FIPE conforme apólice do segurado.
+						</p>
+
+						<h5>POR QUE NÃO APARECE A OPÇÃO DO PRODUTO TRACKER COM SEGURO PARA MEU AUTOMÓVEL/PICK-UP?</h5>
+						<p>
+							Isso acontece porque não disponibilizamos este produto para seu veículo ou região.
+						</p>
+
+						<h5>POR QUANTO TEMPO ESTAREI SEGURADO?</h5>
+						<p>
+							A apólice tem vigência de 12 meses podendo ser renovada a cada ano.
+						</p>
+
+						<h5>EM QUAL MOMENTO MEU VEÍCULO PASSA A ESTAR SEGURADO?</h5>
+						<p>
+							O automóvel só estará coberto após o recebimento do certificado de seguro que será emitido em até 24 horas após a instalação do equipamento.
+						</p>
+
+						<h5>ONDE DEVO LIGAR NO CASO DE ROUBO E FURTO?</h5>
+						<p>
+							Em primeiro lugar, deve comunicar a Central de Aviso do Grupo Tracker, em seguida realizar o Boletim de Ocorrência junto às entidades policiais. Por último, basta informar a seguradora para também registrar o sinistro.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!--build:js js/main.min.js -->
+	<script type="text/javascript" src="js/jquery.mask.js"></script>
+	<script type="text/javascript" src="js/jquery.flip.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/siema.min.js"></script>
+	<script type="text/javascript" src="js/tracker.js"></script>
+	<!--endbuild-->
+</body>
+</html>
